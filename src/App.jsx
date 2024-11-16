@@ -114,7 +114,7 @@ function App() {
               type="checkbox" 
               onChange={handlePopulationChange}
               checked={isCheckedPopulation}
-            /> by population
+            />by population
             <br/>
             <input 
               type="checkbox" 
