@@ -1,8 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Data fetching in React
 
-Currently, two official plugins are available:
+### Fetch data from external sources and display them on the page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Track different loading statuses and render different UI accordingly
+
+#### Filter by continent. When this filter is active, the filter by subregion should be cleared
+
+#### Filter by subregion. When this filter is active, the filter by continent should be cleared
+
+#### Top 10. This will display only the top 10 countries either by population or area
+
+#### Sort alphabetically
