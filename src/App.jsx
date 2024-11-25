@@ -33,11 +33,15 @@ function App() {
   }, []);
 
   useEffect(() => {
-    applyFiltersAndSorting();
+    if (originalCountries.length > 0) {
+      applyFiltersAndSorting();
+    }
   }, [isCheckedAlpha, isCheckedPopulation, isCheckedArea, continent, subregion]);
 
   function applyFiltersAndSorting() {
+    if (originalCountries.length === 0) return;
     let updatedCountries = [...originalCountries];
+    
 
     if (continent !== 'All') {
       updatedCountries = updatedCountries.filter(country =>
